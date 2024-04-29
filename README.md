@@ -1,0 +1,1 @@
+Landing Page sobre una tienda de cafe para practicar lo aprendido de HTML y CSS.
