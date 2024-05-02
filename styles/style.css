@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header-nav{
+    width: 100%;
+    min-height: 90vh;
+    font-family: "Roboto", sans-serif;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url(media/fondo.jpg) no-repeat center;
+    background-size: cover;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+body{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER NAVIGATION */
+
+.navigation{
+    padding: 15px 0px;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.nav-logo{
+    display: flex;
+    width: 80px;
+}
+
+.nav-links{
+    padding: 0px 5px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    max-width: 400px;
+}
+.nav-links ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-links ul li a{
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.nav-links ul li{
+    transition: 0.3s;
+}
+.nav-links ul li:hover{
+    transform: translateY(-7px);
+    text-decoration: underline 3px #b38456;
+
+}
+
+
+/* HERO */
+
+.hero{
+    color: white;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hero-info h1 span{
+    font-weight: 900;
+    color: #b38456;
+}
+.hero-info h3{
+    font-size: 1.4em;
+    font-family: "Playfair Display", serif;
+}
+.hero-info h1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+.hero-info p{
+    font-weight: 200;
+    font-size: 1em;
+}
+.hero-info button{
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    max-width: 140px;
+    padding: 10px 20px;
+    transition: 0.1s;
+}
+.hero-btn:hover{
+    border: 1px solid #b38456;
+}
+
+main{
+    width: 100%;
+}
+/* SECTION PRODUCTOS */
+.section-producto{
+    padding: 20px 0px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.section-producto h1{
+    font-size: 1.7em;
+}
+.producto{
+    padding: 0px 30px;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.producto-info{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    max-width: 250px;
+    transition: 0.3s;
+}
+.producto-info:hover{
+    transform: translateY(-10px);
+}
+.producto-info h5{
+    font-size: 1em;
+    font-style: italic;
+}
+.producto-img{
+    width: 100%;
+}
+.producto-img img{
+    border-radius: 3px;
+    width: 100%;
+}
+main > section {
+    margin: 20px 0px;
+}
+main > section:last-child{
+    margin: 0;
+    border-bottom: 1px solid rgb(65, 61, 61);
+}
+.nuestro-cafe{
+    border-top: 1px solid #444141;
+    padding: 50px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    /* background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url(media/menu/fondo.jpg) no-repeat center;
+    background-size: cover; */
+}
+.title-nuestro-cafe{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.title-nuestro-cafe h3{
+    color: #b38456;
+    font-size: 1em;
+}
+.title-nuestro-cafe h1{
+    font-style: italic;
+    font-size: 2em;
+}
+.info-nuestro-cafe h2{
+    color: #b38456;
+    font-size: 1.1em;
+}
+.info-img-nuestro-cafe p{
+    font-size: 0.9em;
+}
+.info-nuestro-cafe{
+    max-width: 300px;
+}
+.info-img-nuestro-cafe{
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* FOOTER */
+.pequeña{
+    font-size: 0.8em;
+}
+footer{
+    padding: 50px 5px;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.container1{
+    display: flex;
+    max-width: 300px;
+}
+.footer-contenido,.footer-help{
+    padding: 10px;
+}
+.footer-contenido h1,.footer-help h1,.footer-sub h1{
+    font-size: 1em;
+}
+.footer-contenido ul,.footer-help ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sub{
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-sub-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+.footer-sub-input input{
+    padding: 7px;
+    font-weight: 400;
+    border: none;
+    border-radius: 1px;
+}
+.container1 a:hover{
+    text-decoration: underline 1px white;
+}
+.footer-sub-input button{
+    color: rgb(255, 255, 255);
+    background-color: #b38456;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    font-weight: 500;
+}
+.footer-sub-redes{
+    text-align: center;
+}
+.footer-sub-redes h1{
+    margin-bottom: 5px;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+.redes a i{
+     font-size: 1.5em;
+}
+.redes a:nth-child(1):hover{
+    color: #0866ff;
+
+}
+
+
+
+/* CONTACTO HTML */
+
+.contact{
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contact form{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)),url(media/cafe.jpg);
+    background-size: cover;
+    padding: 30px;
+    border: 1px solid rgb(71, 71, 68);
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact form input{
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.contact form input::placeholder{
+    font-weight: bold;
+    color: white;
+}
+.contact form label{
+    font-weight: bold;
+}
+.contact form select{
+    border-radius: 4px;
+    padding: 2px;
+    max-width: 100px;
+}
+.contact form button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    max-width: 100px;
+}
+
